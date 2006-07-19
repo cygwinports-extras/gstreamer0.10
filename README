@@ -1,0 +1,341 @@
+gstreamer010
+-------------------------------------------
+This is GStreamer, a framework for streaming media.  The
+fundamental design comes from the video pipeline at Oregon Graduate
+Institute, as well as some ideas from DirectMedia.  It's based on 
+plug-ins that will provide the various codec and other functionality.
+
+Runtime requirements:
+  cygwin-1.5.20-1
+  alternatives-1.3.20a-2
+  check-0.9.2-2
+  glib2-2.10.3-1
+  libxml2-2.6.26-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.20-1
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.2-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  gtk-doc-1.5-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  python-2.4.3-1
+  pyxml-0.8.4-1
+  sed-4.1.5-1
+
+Canonical homepage:
+  http://gstreamer.freedesktop.org/
+
+Canonical download:
+  http://gstreamer.freedesktop.org/src/gstreamer/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gstreamer010-0.10.9-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gstreamer010-0.10.9-X.cygport all
+
+This will create:
+  /usr/src/gstreamer010-0.10.9-X-src.tar.bz2
+  /usr/src/gstreamer010-0.10.9-X.tar.bz2
+  /usr/src/gstreamer010-devel-0.10.9-X.tar.bz2
+  /usr/src/gstreamer010-doc-0.10.9-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the main package:
+
+  /etc/postinstall/gstreamer010.sh
+  /etc/preremove/gstreamer010.sh
+  /usr/bin/cyggstbase-0.10-0.dll
+  /usr/bin/cyggstcheck-0.10-0.dll
+  /usr/bin/cyggstcontroller-0.10-0.dll
+  /usr/bin/cyggstdataprotocol-0.10-0.dll
+  /usr/bin/cyggstnet-0.10-0.dll
+  /usr/bin/cyggstreamer-0.10-0.dll
+  /usr/bin/gst-feedback-0.10
+  /usr/bin/gst-inspect-0.10.exe
+  /usr/bin/gst-launch-0.10.exe
+  /usr/bin/gst-typefind-0.10.exe
+  /usr/bin/gst-xmlinspect-0.10.exe
+  /usr/bin/gst-xmllaunch-0.10.exe
+  /usr/lib/gstreamer-0.10/cyggstcoreelements.dll
+  /usr/lib/gstreamer-0.10/cyggstcoreindexers.dll
+  /usr/lib/gstreamer-0.10/libgstcoreelements.la
+  /usr/lib/gstreamer-0.10/libgstcoreindexers.la
+  /usr/share/doc/Cygwin/gstreamer010-0.10.9.README
+  /usr/share/doc/gstreamer010-0.10.9/ABOUT-NLS
+  /usr/share/doc/gstreamer010-0.10.9/AUTHORS
+  /usr/share/doc/gstreamer010-0.10.9/COPYING
+  /usr/share/doc/gstreamer010-0.10.9/ChangeLog
+  /usr/share/doc/gstreamer010-0.10.9/INSTALL
+  /usr/share/doc/gstreamer010-0.10.9/NEWS
+  /usr/share/doc/gstreamer010-0.10.9/README
+  /usr/share/locale/af/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/az/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/bg/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/ca/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/cs/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/de/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/fr/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/it/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/nb/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/nl/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/ru/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/sq/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/sr/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/sv/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/tr/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/uk/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/vi/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/gstreamer-0.10.mo
+  /usr/share/man/man1/gst-feedback-0.10.1.gz
+  /usr/share/man/man1/gst-inspect-0.10.1.gz
+  /usr/share/man/man1/gst-launch-0.10.1.gz
+  /usr/share/man/man1/gst-typefind-0.10.1.gz
+  /usr/share/man/man1/gst-xmlinspect-0.10.1.gz
+  /usr/share/man/man1/gst-xmllaunch-0.10.1.gz
+
+Files included in the devel package:
+
+  /usr/include/gstreamer-0.10/gst/base/gstadapter.h
+  /usr/include/gstreamer-0.10/gst/base/gstbasesink.h
+  /usr/include/gstreamer-0.10/gst/base/gstbasesrc.h
+  /usr/include/gstreamer-0.10/gst/base/gstbasetransform.h
+  /usr/include/gstreamer-0.10/gst/base/gstcollectpads.h
+  /usr/include/gstreamer-0.10/gst/base/gstpushsrc.h
+  /usr/include/gstreamer-0.10/gst/base/gsttypefindhelper.h
+  /usr/include/gstreamer-0.10/gst/check/gstcheck.h
+  /usr/include/gstreamer-0.10/gst/controller/gstcontroller.h
+  /usr/include/gstreamer-0.10/gst/dataprotocol/dataprotocol.h
+  /usr/include/gstreamer-0.10/gst/glib-compat.h
+  /usr/include/gstreamer-0.10/gst/gst.h
+  /usr/include/gstreamer-0.10/gst/gstbin.h
+  /usr/include/gstreamer-0.10/gst/gstbuffer.h
+  /usr/include/gstreamer-0.10/gst/gstbus.h
+  /usr/include/gstreamer-0.10/gst/gstcaps.h
+  /usr/include/gstreamer-0.10/gst/gstchildproxy.h
+  /usr/include/gstreamer-0.10/gst/gstclock.h
+  /usr/include/gstreamer-0.10/gst/gstcompat.h
+  /usr/include/gstreamer-0.10/gst/gstconfig.h
+  /usr/include/gstreamer-0.10/gst/gstelement.h
+  /usr/include/gstreamer-0.10/gst/gstelementfactory.h
+  /usr/include/gstreamer-0.10/gst/gstenumtypes.h
+  /usr/include/gstreamer-0.10/gst/gsterror.h
+  /usr/include/gstreamer-0.10/gst/gstevent.h
+  /usr/include/gstreamer-0.10/gst/gstfilter.h
+  /usr/include/gstreamer-0.10/gst/gstformat.h
+  /usr/include/gstreamer-0.10/gst/gstghostpad.h
+  /usr/include/gstreamer-0.10/gst/gstindex.h
+  /usr/include/gstreamer-0.10/gst/gstindexfactory.h
+  /usr/include/gstreamer-0.10/gst/gstinfo.h
+  /usr/include/gstreamer-0.10/gst/gstinterface.h
+  /usr/include/gstreamer-0.10/gst/gstiterator.h
+  /usr/include/gstreamer-0.10/gst/gstmacros.h
+  /usr/include/gstreamer-0.10/gst/gstmarshal.h
+  /usr/include/gstreamer-0.10/gst/gstmessage.h
+  /usr/include/gstreamer-0.10/gst/gstminiobject.h
+  /usr/include/gstreamer-0.10/gst/gstobject.h
+  /usr/include/gstreamer-0.10/gst/gstpad.h
+  /usr/include/gstreamer-0.10/gst/gstpadtemplate.h
+  /usr/include/gstreamer-0.10/gst/gstparse.h
+  /usr/include/gstreamer-0.10/gst/gstpipeline.h
+  /usr/include/gstreamer-0.10/gst/gstplugin.h
+  /usr/include/gstreamer-0.10/gst/gstpluginfeature.h
+  /usr/include/gstreamer-0.10/gst/gstquery.h
+  /usr/include/gstreamer-0.10/gst/gstregistry.h
+  /usr/include/gstreamer-0.10/gst/gstsegment.h
+  /usr/include/gstreamer-0.10/gst/gststructure.h
+  /usr/include/gstreamer-0.10/gst/gstsystemclock.h
+  /usr/include/gstreamer-0.10/gst/gsttaglist.h
+  /usr/include/gstreamer-0.10/gst/gsttagsetter.h
+  /usr/include/gstreamer-0.10/gst/gsttask.h
+  /usr/include/gstreamer-0.10/gst/gsttrace.h
+  /usr/include/gstreamer-0.10/gst/gsttypefind.h
+  /usr/include/gstreamer-0.10/gst/gsttypefindfactory.h
+  /usr/include/gstreamer-0.10/gst/gsturi.h
+  /usr/include/gstreamer-0.10/gst/gstutils.h
+  /usr/include/gstreamer-0.10/gst/gstvalue.h
+  /usr/include/gstreamer-0.10/gst/gstversion.h
+  /usr/include/gstreamer-0.10/gst/gstxml.h
+  /usr/include/gstreamer-0.10/gst/net/gstnet.h
+  /usr/include/gstreamer-0.10/gst/net/gstnetclientclock.h
+  /usr/include/gstreamer-0.10/gst/net/gstnettimepacket.h
+  /usr/include/gstreamer-0.10/gst/net/gstnettimeprovider.h
+  /usr/lib/libgstbase-0.10.dll.a
+  /usr/lib/libgstbase-0.10.la
+  /usr/lib/libgstcheck-0.10.dll.a
+  /usr/lib/libgstcheck-0.10.la
+  /usr/lib/libgstcontroller-0.10.dll.a
+  /usr/lib/libgstcontroller-0.10.la
+  /usr/lib/libgstdataprotocol-0.10.dll.a
+  /usr/lib/libgstdataprotocol-0.10.la
+  /usr/lib/libgstnet-0.10.dll.a
+  /usr/lib/libgstnet-0.10.la
+  /usr/lib/libgstreamer-0.10.dll.a
+  /usr/lib/libgstreamer-0.10.la
+  /usr/lib/pkgconfig/gstreamer-0.10.pc
+  /usr/lib/pkgconfig/gstreamer-base-0.10.pc
+  /usr/lib/pkgconfig/gstreamer-check-0.10.pc
+  /usr/lib/pkgconfig/gstreamer-controller-0.10.pc
+  /usr/lib/pkgconfig/gstreamer-dataprotocol-0.10.pc
+  /usr/lib/pkgconfig/gstreamer-net-0.10.pc
+  /usr/share/aclocal/gst-element-check-0.10.m4
+
+Files included in the doc package:
+
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstBin.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstBus.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstClock.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstElement.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstElementFactory.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstGhostPad.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstImplementsInterface.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstIndex.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstIndexFactory.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstObject.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstPad.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstPadTemplate.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstPipeline.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstPlugin.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstPluginFeature.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstRegistry.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstSystemClock.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstTagSetter.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstTask.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstTypeFindFactory.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/GstXML.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/api-index.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gst-running.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-0.10.devhelp
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-Gst.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstBuffer.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstCaps.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstChildProxy.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstEvent.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstFilter.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstFormat.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstGError.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstInfo.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstIterator.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstMessage.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstMiniObject.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstParse.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstQuery.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstSegment.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstStructure.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstTagList.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstTrace.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstTypeFind.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstUriHandler.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstUtils.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstValue.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-GstVersion.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-gstconfig.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-hierarchy.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer-support.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/gstreamer.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/home.png
+  /usr/share/gtk-doc/html/gstreamer-0.10/index.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/index.sgml
+  /usr/share/gtk-doc/html/gstreamer-0.10/ix02.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/left.png
+  /usr/share/gtk-doc/html/gstreamer-0.10/libgstreamer.html
+  /usr/share/gtk-doc/html/gstreamer-0.10/right.png
+  /usr/share/gtk-doc/html/gstreamer-0.10/style.css
+  /usr/share/gtk-doc/html/gstreamer-0.10/up.png
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/GstController.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/api-index.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-base.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-check.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-control.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-libs-0.10.devhelp
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-libs-GstAdapter.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-libs-GstBaseSink.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-libs-GstBaseSrc.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-libs-GstBaseTransform.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-libs-GstCheck.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-libs-GstCollectPads.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-libs-GstControllerGObject.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-libs-GstNetClientClock.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-libs-GstNetTimePacket.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-libs-GstNetTimeProvider.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-libs-GstPushSrc.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-libs-GstTypeFindHelper.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-libs-gstdataprotocol.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-libs-hierarchy.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-libs.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/gstreamer-net.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/home.png
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/index.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/index.sgml
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/ix02.html
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/left.png
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/right.png
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/style.css
+  /usr/share/gtk-doc/html/gstreamer-libs-0.10/up.png
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/ch01.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/ch02.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-0.10.devhelp
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-fakesink.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-fakesrc.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-fdsrc.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-filesink.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-filesrc.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-identity.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-plugin-coreelements.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-plugin-coreindexers.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-queue.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-tee.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-typefind.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/home.png
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/index.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/index.sgml
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/left.png
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/right.png
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/style.css
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/up.png
+
+------------------
+
+Port Notes:
+
+----- version 0.10.9-1 -----
+Version bump.
+
+----- version 0.10.8-1 -----
+Version bump.
+alternatives is now used to provide unversioned program names.
+
+----- version 0.10.6-1 -----
+Version bump.
+
+----- version 0.10.5-1 -----
+Version bump.
+
+----- version 0.10.4-1 -----
+Version bump.
+libgstcheck-0.10 is included.
+
+----- version 0.10.3-1 -----
+Version bump.
+
+----- version 0.10.2-1 -----
+Version bump.
+
+----- version 0.10.1-1 -----
+Initial release of 0.10 stable branch for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
