@@ -9,25 +9,25 @@ Runtime requirements:
   cygwin-1.5.25-15
   alternatives
   check-0.9.5-1
-  glib2-2.16.3-1
+  glib2-2.16.6-1
   libintl8-0.15-1
-  libxml2-2.6.32-1
+  libxml2-2.6.32-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
+  autoconf2.5-2.63-1
   automake1.9-1.9.6-2
-  binutils-20080523-1
+  binutils-20080624-2
   bison-2.3-1
-  cygport-0.3.11-1
+  cygport-0.4.0-1
   flex-2.5.35-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gtk-doc-1.10-1
-  libtool-2.2.2-2
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
-  python-2.5.2-1
+  pkg-config-0.23a-2
+  python-2.5.2-3
   python-xml-0.8.4-2
   sed-4.1.5-2
 
@@ -40,16 +40,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gstreamer010-0.10.20-X-src.tar.bz2
+  unpack gstreamer010-0.10.21-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gstreamer010-0.10.20-X.cygport all
+  cygport ./gstreamer010-0.10.21-X.cygport all
 
 This will create:
-  /usr/src/gstreamer010-0.10.20-X-src.tar.bz2
-  /usr/src/gstreamer010-0.10.20-X.tar.bz2
-  /usr/src/gstreamer010-devel-0.10.20-X.tar.bz2
+  /usr/src/gstreamer010-0.10.21-X-src.tar.bz2
+  /usr/src/gstreamer010-0.10.21-X.tar.bz2
+  /usr/src/gstreamer010-devel-0.10.21-X.tar.bz2
 
 -------------------------------------------
 
@@ -74,13 +74,13 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/cyggstcoreindexers.dll
   /usr/lib/gstreamer-0.10/libgstcoreelements.la
   /usr/lib/gstreamer-0.10/libgstcoreindexers.la
-  /usr/share/doc/gstreamer010-0.10.20/ABOUT-NLS
-  /usr/share/doc/gstreamer010-0.10.20/AUTHORS
-  /usr/share/doc/gstreamer010-0.10.20/COPYING
-  /usr/share/doc/gstreamer010-0.10.20/ChangeLog
-  /usr/share/doc/gstreamer010-0.10.20/INSTALL
-  /usr/share/doc/gstreamer010-0.10.20/NEWS
-  /usr/share/doc/gstreamer010-0.10.20/README
+  /usr/share/doc/gstreamer010-0.10.21/ABOUT-NLS
+  /usr/share/doc/gstreamer010-0.10.21/AUTHORS
+  /usr/share/doc/gstreamer010-0.10.21/COPYING
+  /usr/share/doc/gstreamer010-0.10.21/ChangeLog
+  /usr/share/doc/gstreamer010-0.10.21/INSTALL
+  /usr/share/doc/gstreamer010-0.10.21/NEWS
+  /usr/share/doc/gstreamer010-0.10.21/README
   /usr/share/locale/af/LC_MESSAGES/gstreamer-0.10.mo
   /usr/share/locale/az/LC_MESSAGES/gstreamer-0.10.mo
   /usr/share/locale/bg/LC_MESSAGES/gstreamer-0.10.mo
@@ -326,6 +326,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.10.21-1 -----
+Version bump.
 
 ----- version 0.10.20-1 -----
 Version bump.

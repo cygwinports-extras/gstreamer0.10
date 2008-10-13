@@ -3,6 +3,8 @@ inherit gstreamer
 
 DESCRIPTION="GStreamer multimedia framework (${PV_MAJ_MIN} branch)"
 
+PATCH_URI="0.10.20-sigaction.patch"
+
 PKG_NAMES="${PN} ${PN}-devel"
 PKG_HINTS="setup devel"
 PKG_CONTENTS[0]="etc/ usr/bin/ usr/lib/${ORIG_PN}-${PV_MAJ_MIN}/ \
@@ -18,7 +20,7 @@ src_compile() {
 	cygconf \
 		--enable-gtk-doc \
 		--disable-static --disable-tests --disable-examples \
-		--with-cachedir=/var/cache/${ORIG_PN}-${PV_MAJ_MIN}
+		ac_cv_header_winsock2_h=no
 
 	cygmake
 }
