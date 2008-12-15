@@ -1,7 +1,6 @@
 category: Gnome Audio
-requires: cygwin gstreamer010 glib2-devel gettext libxml2-devel check
-external-source: gstreamer010
-sdesc: "GNOME streaming media framework (0.10 development)"
+requires: cygwin libglib2.0_0 libgstreamer0.10_0 libintl8 alternatives
+sdesc: "GNOME streaming media framework (0.10 utilities)"
 ldesc: "This is GStreamer, a framework for streaming media.  The
 fundamental design comes from the video pipeline at Oregon Graduate
 Institute, as well as some ideas from DirectMedia.  It's based on

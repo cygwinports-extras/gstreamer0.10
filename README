@@ -1,4 +1,4 @@
-gstreamer010
+gstreamer0.10
 -------------------------------------------
 This is GStreamer, a framework for streaming media.  The
 fundamental design comes from the video pipeline at Oregon Graduate
@@ -9,9 +9,9 @@ Runtime requirements:
   cygwin-1.5.25-15
   alternatives
   check-0.9.5-1
-  glib2-2.16.6-1
-  libintl8-0.15-1
-  libxml2-2.6.32-2
+  libglib2.0_0-2.18.3-1
+  libintl8-0.17-2
+  libxml2-2.7.2-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -19,15 +19,15 @@ Build requirements:
   automake1.9-1.9.6-2
   binutils-20080624-2
   bison-2.3-1
-  cygport-0.4.0-1
+  cygport-0.4.3-1
   flex-2.5.35-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gtk-doc-1.10-1
+  gtk-doc-1.11-1
   libtool-2.2.6a-1
   make-3.81-1
   pkg-config-0.23a-2
-  python-2.5.2-3
+  python-2.5.2-4
   python-xml-0.8.4-2
   sed-4.1.5-2
 
@@ -40,47 +40,79 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gstreamer010-0.10.21-X-src.tar.bz2
+  unpack gstreamer0.10-0.10.21-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gstreamer010-0.10.21-X.cygport all
+  cygport ./gstreamer0.10-0.10.21-X.cygport all
 
 This will create:
-  /usr/src/gstreamer010-0.10.21-X-src.tar.bz2
-  /usr/src/gstreamer010-0.10.21-X.tar.bz2
-  /usr/src/gstreamer010-devel-0.10.21-X.tar.bz2
+  /usr/src/gstreamer0.10-0.10.21-X-src.tar.bz2
+  /usr/src/gstreamer0.10-0.10.21-X.tar.bz2
+  /usr/src/libgstreamer0.10-devel-0.10.21-X.tar.bz2
+  /usr/src/libgstreamer0.10_0-0.10.21-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
-(gstreamer010)
-  /etc/postinstall/gstreamer010.sh
-  /etc/preremove/gstreamer010.sh
-  /usr/bin/cyggstbase-0.10-0.dll
-  /usr/bin/cyggstcheck-0.10-0.dll
-  /usr/bin/cyggstcontroller-0.10-0.dll
-  /usr/bin/cyggstdataprotocol-0.10-0.dll
-  /usr/bin/cyggstnet-0.10-0.dll
-  /usr/bin/cyggstreamer-0.10-0.dll
+(gstreamer0.10)
+  /etc/postinstall/gstreamer0.10.sh
+  /etc/preremove/gstreamer0.10.sh
   /usr/bin/gst-feedback-0.10
   /usr/bin/gst-inspect-0.10.exe
   /usr/bin/gst-launch-0.10.exe
   /usr/bin/gst-typefind-0.10.exe
   /usr/bin/gst-xmlinspect-0.10.exe
   /usr/bin/gst-xmllaunch-0.10.exe
+  /usr/share/doc/gstreamer0.10-0.10.21/ABOUT-NLS
+  /usr/share/doc/gstreamer0.10-0.10.21/AUTHORS
+  /usr/share/doc/gstreamer0.10-0.10.21/COPYING
+  /usr/share/doc/gstreamer0.10-0.10.21/ChangeLog
+  /usr/share/doc/gstreamer0.10-0.10.21/INSTALL
+  /usr/share/doc/gstreamer0.10-0.10.21/NEWS
+  /usr/share/doc/gstreamer0.10-0.10.21/README
+  /usr/share/man/man1/gst-feedback-0.10.1.gz
+  /usr/share/man/man1/gst-inspect-0.10.1.gz
+  /usr/share/man/man1/gst-launch-0.10.1.gz
+  /usr/share/man/man1/gst-typefind-0.10.1.gz
+  /usr/share/man/man1/gst-xmlinspect-0.10.1.gz
+  /usr/share/man/man1/gst-xmllaunch-0.10.1.gz
+
+(libgstreamer0.10_0)
+  /usr/bin/cyggstbase-0.10-0.dll
+  /usr/bin/cyggstcheck-0.10-0.dll
+  /usr/bin/cyggstcontroller-0.10-0.dll
+  /usr/bin/cyggstdataprotocol-0.10-0.dll
+  /usr/bin/cyggstnet-0.10-0.dll
+  /usr/bin/cyggstreamer-0.10-0.dll
   /usr/lib/gstreamer-0.10/cyggstcoreelements.dll
   /usr/lib/gstreamer-0.10/cyggstcoreindexers.dll
   /usr/lib/gstreamer-0.10/libgstcoreelements.la
   /usr/lib/gstreamer-0.10/libgstcoreindexers.la
-  /usr/share/doc/gstreamer010-0.10.21/ABOUT-NLS
-  /usr/share/doc/gstreamer010-0.10.21/AUTHORS
-  /usr/share/doc/gstreamer010-0.10.21/COPYING
-  /usr/share/doc/gstreamer010-0.10.21/ChangeLog
-  /usr/share/doc/gstreamer010-0.10.21/INSTALL
-  /usr/share/doc/gstreamer010-0.10.21/NEWS
-  /usr/share/doc/gstreamer010-0.10.21/README
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/ch01.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/ch02.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-0.10.devhelp
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-capsfilter.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-fakesink.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-fakesrc.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-fdsink.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-fdsrc.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-filesink.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-filesrc.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-identity.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-plugin-coreelements.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-plugin-coreindexers.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-queue.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-tee.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-typefind.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/home.png
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/index.html
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/index.sgml
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/left.png
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/right.png
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/style.css
+  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/up.png
   /usr/share/locale/af/LC_MESSAGES/gstreamer-0.10.mo
   /usr/share/locale/az/LC_MESSAGES/gstreamer-0.10.mo
   /usr/share/locale/bg/LC_MESSAGES/gstreamer-0.10.mo
@@ -103,14 +135,8 @@ Files included in the binary packages:
   /usr/share/locale/vi/LC_MESSAGES/gstreamer-0.10.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/gstreamer-0.10.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/gstreamer-0.10.mo
-  /usr/share/man/man1/gst-feedback-0.10.1.gz
-  /usr/share/man/man1/gst-inspect-0.10.1.gz
-  /usr/share/man/man1/gst-launch-0.10.1.gz
-  /usr/share/man/man1/gst-typefind-0.10.1.gz
-  /usr/share/man/man1/gst-xmlinspect-0.10.1.gz
-  /usr/share/man/man1/gst-xmllaunch-0.10.1.gz
 
-(gstreamer010-devel)
+(libgstreamer0.10-devel)
   /usr/include/gstreamer-0.10/gst/base/gstadapter.h
   /usr/include/gstreamer-0.10/gst/base/gstbasesink.h
   /usr/include/gstreamer-0.10/gst/base/gstbasesrc.h
@@ -299,33 +325,13 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gstreamer-libs-0.10/right.png
   /usr/share/gtk-doc/html/gstreamer-libs-0.10/style.css
   /usr/share/gtk-doc/html/gstreamer-libs-0.10/up.png
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/ch01.html
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/ch02.html
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-0.10.devhelp
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-capsfilter.html
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-fakesink.html
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-fakesrc.html
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-fdsink.html
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-fdsrc.html
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-filesink.html
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-filesrc.html
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-identity.html
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-plugin-coreelements.html
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-plugin-coreindexers.html
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-queue.html
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-tee.html
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/gstreamer-plugins-typefind.html
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/home.png
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/index.html
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/index.sgml
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/left.png
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/right.png
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/style.css
-  /usr/share/gtk-doc/html/gstreamer-plugins-0.10/up.png
 
 ------------------
 
 Port Notes:
+
+----- version 0.10.21-2 -----
+Rebuilt.
 
 ----- version 0.10.21-1 -----
 Version bump.

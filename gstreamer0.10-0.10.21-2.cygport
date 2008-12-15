@@ -1,0 +1,45 @@
+ORIG_PN=gstreamer
+inherit gstreamer
+
+DESCRIPTION="GStreamer multimedia framework (${PV_MAJ_MIN} branch)"
+
+PATCH_URI="
+	0.10.20-sigaction.patch
+	0.10.21-gst-feedback.patch
+"
+
+PKG_NAMES="${PN} lib${PN}_0 lib${PN}-devel"
+gstreamer0_10_CONTENTS="etc/ usr/bin/gst-* usr/share/doc/ usr/share/man/"
+libgstreamer0_10_0_CONTENTS="usr/bin/*-0.10-0.dll usr/lib/gstreamer-0.10/
+                             usr/share/gtk-doc/html/gstreamer-plugins-0.10/
+                             usr/share/locale/"
+libgstreamer0_10_devel_CONTENTS="--exclude=gstreamer-plugins-0.10
+                                 usr/include/ usr/lib/lib* usr/lib/pkgconfig/
+                                 usr/share/aclocal/ usr/share/gtk-doc/"
+
+src_compile() {
+	cd ${S}
+	gstreamer_autoreconf
+
+	cd ${B}
+	cygconf \
+		--enable-gtk-doc \
+		--disable-static --disable-tests --disable-examples \
+		ac_cv_header_winsock2_h=no
+
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	cd ${D}/usr/bin
+
+	rm gst-feedback.exe
+
+	for gst_bins in $(ls *-${PV_MAJ_MIN}.exe)
+	do
+		rm -f ${gst_bins/-${PV_MAJ_MIN}/}
+	done
+}

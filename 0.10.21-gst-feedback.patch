@@ -1,0 +1,20 @@
+--- origsrc/gstreamer-0.10.21/tools/gst-feedback-m.m	2006-06-21 05:14:00.000000000 -0500
++++ src/gstreamer-0.10.21/tools/gst-feedback-m.m	2008-12-14 00:37:51.107999000 -0600
+@@ -82,7 +82,7 @@
+ echo "++  looking for gstreamer libraries in common locations"
+ for dirs in /usr/lib /usr/local/lib; do
+   if test -d $dirs; then
+-    find $dirs -name libgstreamer* | grep so
++    find $dirs -name 'libgstreamer*' | grep dll.a
+   fi
+ done
+ echo "++  looking for gstreamer headers in common locations"
+@@ -102,7 +102,7 @@
+ echo "++  looking for gstreamer volume plugin in common locations"
+ for dirs in /usr/lib /usr/local/lib; do
+   if test -d $dirs; then
+-    find $dirs -name libgstvolume* | grep so
++    find $dirs -name 'cyggstvolume*' | grep dll
+   fi
+ done
+ echo "++  looking for gstreamer headers in common locations"
