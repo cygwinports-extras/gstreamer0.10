@@ -10,10 +10,12 @@ PATCH_URI="
 
 PKG_NAMES="${PN} lib${PN}_0 lib${PN}-devel"
 gstreamer0_10_CONTENTS="etc/ usr/bin/gst-* usr/share/doc/ usr/share/man/"
-libgstreamer0_10_0_CONTENTS="usr/bin/*-0.10-0.dll usr/lib/gstreamer-0.10/
+libgstreamer0_10_0_CONTENTS="--exclude=cyggstcheck-0.10-0.dll
+                             usr/bin/*-0.10-0.dll usr/lib/gstreamer-0.10/
                              usr/share/gtk-doc/html/gstreamer-plugins-0.10/
                              usr/share/locale/"
 libgstreamer0_10_devel_CONTENTS="--exclude=gstreamer-plugins-0.10
+                                 usr/bin/cyggstcheck-0.10-0.dll
                                  usr/include/ usr/lib/lib* usr/lib/pkgconfig/
                                  usr/share/aclocal/ usr/share/gtk-doc/"
 
