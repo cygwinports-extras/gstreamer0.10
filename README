@@ -352,6 +352,9 @@ Files included in the binary packages:
 
 Port Notes:
 
+----- version 0.10.22-2 -----
+Fix ladspa plugin and other platform-specific settings (GNOME bug 555978).
+
 ----- version 0.10.22-1 -----
 Version bump.
 
