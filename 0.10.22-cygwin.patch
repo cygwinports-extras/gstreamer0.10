@@ -1,14 +1,13 @@
-configure.ac: Fix platform-specific settings for Cygwin.
+configure.ac: fork() during registry scan is unsafe on Cygwin (bug 555978).
 
 --- origsrc/gstreamer-0.10.22/configure.ac	2009-01-19 14:35:32.000000000 -0600
 +++ src/gstreamer-0.10.22/configure.ac	2009-02-28 23:44:21.562500000 -0600
-@@ -225,7 +225,11 @@ case $host_os in
+@@ -225,7 +225,10 @@ case $host_os in
  	AC_DEFINE_UNQUOTED(GST_EXTRA_MODULE_SUFFIX, [".dylib"], [Extra platform specific plugin suffix])
          AC_DEFINE_UNQUOTED(GST_HAVE_UNSAFE_FORK, 1, [Defined when registry scanning through fork is unsafe])
  	;;
 -     cygwin* | mingw* | msvc* | mks*)
 +     cygwin*)
-+	AC_DEFINE_UNQUOTED(GST_EXTRA_MODULE_SUFFIX, [".so"], [Extra platform specific plugin suffix])
 +	AC_DEFINE_UNQUOTED(GST_HAVE_UNSAFE_FORK, 1, [Defined when registry scanning through fork is unsafe])
 +	;;
 +     mingw* | msvc* | mks*)
