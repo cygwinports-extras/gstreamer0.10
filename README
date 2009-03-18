@@ -6,30 +6,29 @@ Institute, as well as some ideas from DirectMedia.  It's based on
 plug-ins that will provide the various codec and other functionality.
 
 Runtime requirements:
-  cygwin-1.5.25-15
+  cygwin-1.7.0-43
   alternatives
-  check-0.9.5-1
-  libglib2.0_0-2.18.4-1
-  libintl8-0.17-2
-  libxml2-2.7.3-1
+  check-0.9.6-1
+  libglib2.0_0-2.20.0-1
+  libintl8-0.17-10
+  libxml2-2.7.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.9-1.9.6-3
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
   bison-2.3-1
-  cygport-0.4.3-1
+  cygport-0.9.6-1
   flex-2.5.35-1
   gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gettext-devel-0.17-2
-  gtk-doc-1.11-1
-  libtool-2.2.6a-1
-  make-3.81-1
+  gcc4-core-4.3.2-2
+  gettext-devel-0.17-10
+  gtk-doc-1.11-2
+  libtool-2.2.7a-1
+  make-3.81-2
   pkg-config-0.23a-2
-  python-2.5.2-4
-  python-xml-0.8.4-2
+  python-2.5.4-10
   sed-4.1.5-2
 
 Canonical homepage:
@@ -66,13 +65,12 @@ Files included in the binary packages:
   /usr/bin/gst-typefind-0.10.exe
   /usr/bin/gst-xmlinspect-0.10.exe
   /usr/bin/gst-xmllaunch-0.10.exe
-  /usr/share/doc/gstreamer0.10-0.10.22/ABOUT-NLS
-  /usr/share/doc/gstreamer0.10-0.10.22/AUTHORS
-  /usr/share/doc/gstreamer0.10-0.10.22/COPYING
-  /usr/share/doc/gstreamer0.10-0.10.22/ChangeLog
-  /usr/share/doc/gstreamer0.10-0.10.22/INSTALL
-  /usr/share/doc/gstreamer0.10-0.10.22/NEWS
-  /usr/share/doc/gstreamer0.10-0.10.22/README
+  /usr/share/doc/gstreamer0.10/ABOUT-NLS
+  /usr/share/doc/gstreamer0.10/AUTHORS
+  /usr/share/doc/gstreamer0.10/COPYING
+  /usr/share/doc/gstreamer0.10/ChangeLog
+  /usr/share/doc/gstreamer0.10/NEWS
+  /usr/share/doc/gstreamer0.10/README
   /usr/share/man/man1/gst-feedback-0.10.1.gz
   /usr/share/man/man1/gst-inspect-0.10.1.gz
   /usr/share/man/man1/gst-launch-0.10.1.gz
@@ -352,73 +350,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 0.10.22-2 -----
-Fix ladspa plugin and other platform-specific settings (GNOME bug 555978).
-
------ version 0.10.22-1 -----
-Version bump.
-
------ version 0.10.21-2 -----
-Rebuilt.
-
------ version 0.10.21-1 -----
-Version bump.
-
------ version 0.10.20-1 -----
-Version bump.
-
------ version 0.10.19-1 -----
-Version bump.
-
------ version 0.10.17-1 -----
-Version bump.
-
------ version 0.10.15-1 -----
-Version bump.
-
------ version 0.10.14-1 -----
-Version bump.
-
------ version 0.10.13-1 -----
-Version bump.
-
------ version 0.10.12-1 -----
-Version bump.
-
------ version 0.10.11-1 -----
-Version bump.
-
------ version 0.10.10-2 -----
-Rebuild with updated toolchain.
-
------ version 0.10.10-1 -----
-Version bump.
-
------ version 0.10.9-1 -----
-Version bump.
-
------ version 0.10.8-1 -----
-Version bump.
-alternatives is now used to provide unversioned program names.
-
------ version 0.10.6-1 -----
-Version bump.
-
------ version 0.10.5-1 -----
-Version bump.
-
------ version 0.10.4-1 -----
-Version bump.
-libgstcheck-0.10 is included.
-
------ version 0.10.3-1 -----
-Version bump.
-
------ version 0.10.2-1 -----
-Version bump.
-
------ version 0.10.1-1 -----
-Initial release of 0.10 stable branch for Cygwin.
+----- version 0.10.22-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

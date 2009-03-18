@@ -1,0 +1,49 @@
+--- origsrc/gstreamer-0.10.22/libs/gst/net/gstnettimepacket.c	2007-10-31 17:01:02.000000000 -0500
++++ src/gstreamer-0.10.22/libs/gst/net/gstnettimepacket.c	2009-03-18 03:09:55.092477500 -0500
+@@ -34,11 +34,6 @@
+ 
+ #include <glib.h>
+ 
+-#ifdef __CYGWIN__
+-# include <unistd.h>
+-# include <fcntl.h>
+-#endif
+-
+ #include "gstnettimepacket.h"
+ 
+ 
+@@ -171,9 +166,7 @@ gint
+ gst_net_time_packet_send (const GstNetTimePacket * packet, gint fd,
+     struct sockaddr * addr, socklen_t len)
+ {
+-#if defined __CYGWIN__
+-  gint fdflags;
+-#elif defined G_OS_WIN32
++#if defined G_OS_WIN32
+   gulong flags;
+ #endif
+ 
+@@ -182,11 +175,7 @@ gst_net_time_packet_send (const GstNetTi
+ 
+   g_return_val_if_fail (packet != NULL, -EINVAL);
+ 
+-#ifdef __CYGWIN__
+-  send_flags = 0;
+-  fdflags = fcntl (fd, F_GETFL);
+-  fcntl (fd, F_SETFL, fdflags | O_NONBLOCK);
+-#elif defined G_OS_WIN32
++#if defined G_OS_WIN32
+   flags = 1;
+   send_flags = 0;
+ #else
+@@ -201,10 +190,6 @@ gst_net_time_packet_send (const GstNetTi
+ 
+   ret = sendto (fd, buffer, GST_NET_TIME_PACKET_SIZE, send_flags, addr, len);
+ 
+-#ifdef __CYGWIN__
+-  fcntl (fd, F_SETFL, fdflags);
+-#endif
+-
+   g_free (buffer);
+ 
+   return ret;

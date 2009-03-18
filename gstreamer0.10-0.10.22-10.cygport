@@ -6,6 +6,7 @@ DESCRIPTION="GStreamer multimedia framework (${PV_MAJ_MIN} branch)"
 PATCH_URI="
 	0.10.21-gst-feedback.patch
 	0.10.22-cygwin.patch
+	0.10.22-cygwin17.patch
 "
 
 PKG_NAMES="${PN} lib${PN}_0 lib${PN}-devel"
