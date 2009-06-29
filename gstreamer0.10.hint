@@ -1,5 +1,5 @@
 category: Gnome Audio
-requires: cygwin libgcc1 libglib2.0_0 libgstreamer0.10_0 libintl8 alternatives
+requires: libgcc1 libglib2.0_0 libgstreamer0.10_0 libintl8 alternatives
 sdesc: "GNOME streaming media framework (0.10 utilities)"
 ldesc: "This is GStreamer, a framework for streaming media.  The
 fundamental design comes from the video pipeline at Oregon Graduate

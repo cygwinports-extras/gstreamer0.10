@@ -1,5 +1,5 @@
 category: Gnome Audio
-requires: cygwin libgstreamer0.10_0 libglib2.0-devel gettext libxml2-devel check
+requires: libgstreamer0.10_0 libglib2.0-devel gettext libxml2-devel check
 external-source: gstreamer0.10
 sdesc: "GNOME streaming media framework (0.10 development)"
 ldesc: "This is GStreamer, a framework for streaming media.  The
