@@ -1,5 +1,5 @@
 category: Audio Gnome Video
-requires: gobject-introspection-GLib2.0 gobject-introspection-x11 libgstreamer0.10_0
+requires: girepository-GLib2.0 girepository-x11 libgstreamer0.10_0
 external-source: gstreamer0.10
 sdesc: "Streaming media framework (GObject-Introspection data)"
 ldesc: "This is GStreamer, a framework for streaming media.  The

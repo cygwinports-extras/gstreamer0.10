@@ -48,7 +48,7 @@ Build instructions:
   cygport ./gstreamer0.10-0.10.25-X.cygport all
 
 This will create:
-  /usr/src/gobject-introspection-Gst0.10-0.10.25-X-src.tar.bz2
+  /usr/src/girepository-Gst0.10-0.10.25-X-src.tar.bz2
   /usr/src/gstreamer0.10-0.10.25-X-src.tar.bz2
   /usr/src/gstreamer0.10-0.10.25-X.tar.bz2
   /usr/src/libgstreamer0.10-devel-0.10.25-X.tar.bz2
