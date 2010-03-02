@@ -1,0 +1,16 @@
+FIXME:
+The external plugin loader actually works, but for some reason the 
+waitpid() call in gst/gstpluginloader.c hangs, and ignoring it results
+in the former becoming a "zombie" process.
+
+--- origsrc/gstreamer-0.10.26/gst/gstregistry.c	2010-01-19 19:48:56.000000000 -0600
++++ src/gstreamer-0.10.26/gst/gstregistry.c	2010-03-01 00:53:49.818625100 -0600
+@@ -1003,7 +1003,7 @@ gst_registry_scan_plugin_file (GstRegist
+   gboolean changed = FALSE;
+   GstPlugin *newplugin = NULL;
+ 
+-  #ifdef G_OS_WIN32
++  #ifdef G_PLATFORM_WIN32
+     /* Disable external plugin loader on Windows until it is ported properly. */
+     context->helper_state = REGISTRY_SCAN_HELPER_DISABLED;
+   #endif
