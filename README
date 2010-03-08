@@ -41,24 +41,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gstreamer0.10-0.10.26-X-src.tar.bz2
+  unpack gstreamer0.10-0.10.27-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gstreamer0.10-0.10.26-X.cygport all
+  cygport ./gstreamer0.10-0.10.27-X.cygport all
 
 This will create:
-  /usr/src/girepository-Gst0.10-0.10.26-X-src.tar.bz2
-  /usr/src/gstreamer0.10-0.10.26-X-src.tar.bz2
-  /usr/src/gstreamer0.10-0.10.26-X.tar.bz2
-  /usr/src/libgstreamer0.10-devel-0.10.26-X.tar.bz2
-  /usr/src/libgstreamer0.10_0-0.10.26-X.tar.bz2
+  /usr/src/girepository-Gst0.10-0.10.27-X-src.tar.bz2
+  /usr/src/gstreamer0.10-0.10.27-X-src.tar.bz2
+  /usr/src/gstreamer0.10-0.10.27-X.tar.bz2
+  /usr/src/libgstreamer0.10-devel-0.10.27-X.tar.bz2
+  /usr/src/libgstreamer0.10_0-0.10.27-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
 
------ version 0.10.26-1 -----
+----- version 0.10.27-1 -----
 Version bump.
 
 ----- version 0.10.25-1 -----
