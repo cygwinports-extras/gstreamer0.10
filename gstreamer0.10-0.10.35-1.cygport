@@ -10,7 +10,7 @@ PATCH_URI="
 "
 
 PKG_NAMES="${PN} lib${PN}_0 lib${PN}-devel girepository-Gst0.10"
-gstreamer0_10_CONTENTS="etc/ usr/bin/gst-* usr/share/doc/ usr/share/man/"
+gstreamer0_10_CONTENTS="usr/bin/gst-* usr/share/doc/ usr/share/man/"
 girepository_Gst0_10_CONTENTS="usr/*/gir*-1.0/Gst*-0.10.*"
 libgstreamer0_10_0_CONTENTS="--exclude=cyggstcheck-0.10-0.dll
                              usr/bin/*-0.10-0.dll usr/lib/gstreamer-0.10/
