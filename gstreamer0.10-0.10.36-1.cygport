@@ -26,9 +26,11 @@ src_compile() {
 	gstreamer_autoreconf
 
 	cd ${B}
+	# stdio_ext.h: requires __fbufsize
 	cygconf \
 		--enable-gtk-doc \
 		--disable-static --disable-tests --disable-examples \
+		ac_cv_header_stdio_ext_h=no \
 		ac_cv_header_winsock2_h=no
 
 	cygmake
