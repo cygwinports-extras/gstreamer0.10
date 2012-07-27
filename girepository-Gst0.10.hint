@@ -1,8 +1,0 @@
-category: Audio Gnome Video
-requires: girepository-GLib2.0 girepository-x11 libgstreamer0.10_0
-external-source: gstreamer0.10
-sdesc: "Streaming media framework (GObject-Introspection data)"
-ldesc: "This is GStreamer, a framework for streaming media.  The
-fundamental design comes from the video pipeline at Oregon Graduate
-Institute, as well as some ideas from DirectMedia.  It's based on
-plug-ins that will provide the various codec and other functionality."

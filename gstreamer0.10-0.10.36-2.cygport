@@ -1,7 +1,10 @@
 ORIG_PN=gstreamer
 inherit gstreamer
 
-DESCRIPTION="GStreamer multimedia framework (${PV_MAJ_MIN} branch)"
+CATEGORY="Audio Video"
+SUMMARY="GStreamer multimedia framework (${PV_MAJ_MIN} branch)"
+DESCRIPTION="The core library for the GStreamer multimedia framework. It
+contains the headers, core library files, and core elements."
 
 PATCH_URI="
 	0.10.21-gst-feedback.patch
@@ -9,9 +12,10 @@ PATCH_URI="
 	0.10.29-plugin-loader.patch
 "
 
-PKG_NAMES="${PN} lib${PN}_0 lib${PN}-devel girepository-Gst0.10"
+PKG_NAMES="${PN} lib${PN}_0 lib${PN}-devel girepository-Gst0.10 girepository-GstCheck0.10"
 gstreamer0_10_CONTENTS="usr/bin/gst-* usr/share/doc/ usr/share/man/"
-girepository_Gst0_10_CONTENTS="usr/*/gir*-1.0/Gst*-0.10.*"
+girepository_Gst0_10_CONTENTS="--exclude=GstCheck* usr/*/gir*-1.0/Gst*-0.10.*"
+girepository_GstCheck0_10_CONTENTS="usr/*/gir*/GstCheck-0.10.*"
 libgstreamer0_10_0_CONTENTS="--exclude=cyggstcheck-0.10-0.dll
                              usr/bin/*-0.10-0.dll usr/lib/gstreamer-0.10/
                              usr/share/gtk-doc/html/gstreamer-plugins-0.10/
@@ -49,3 +53,5 @@ src_install() {
 		rm -f ${gst_bins/-${PV_MAJ_MIN}/}
 	done
 }
+
+KEEP_LA_FILES="none"

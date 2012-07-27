@@ -1,8 +1,0 @@
-category: Gnome Audio Video
-requires: libgcc1 libglib2.0_0 libintl8 libxml2
-external-source: gstreamer0.10
-sdesc: "Streaming media framework (0.10 runtime)"
-ldesc: "This is GStreamer, a framework for streaming media.  The
-fundamental design comes from the video pipeline at Oregon Graduate
-Institute, as well as some ideas from DirectMedia.  It's based on
-plug-ins that will provide the various codec and other functionality."
