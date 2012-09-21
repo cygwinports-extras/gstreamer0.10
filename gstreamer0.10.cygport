@@ -1,10 +1,12 @@
-ORIG_PN=gstreamer
-inherit gstreamer
-
+NAME="gstreamer0.10"
+VERSION=0.10.36
+RELEASE=2
 CATEGORY="Audio Video"
 SUMMARY="GStreamer multimedia framework (${PV_MAJ_MIN} branch)"
 DESCRIPTION="The core library for the GStreamer multimedia framework. It
 contains the headers, core library files, and core elements."
+ORIG_PN="gstreamer"
+inherit gstreamer
 
 PATCH_URI="
 	0.10.21-gst-feedback.patch
